@@ -1,0 +1,27 @@
+/* Custom Styles */
+.users-card {
+  margin: 20px;
+  padding: 20px;
+}
+
+mat-toolbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+table {
+  width: 100%;
+}
+
+mat-card {
+  margin: 20px;
+}
+
+mat-toolbar span {
+  font-size: 18px;
+  font-weight: bold;
+}

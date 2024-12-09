@@ -1,0 +1,22 @@
+<mat-card class="login-card">
+  <mat-toolbar color="primary" class="login-toolbar">Login</mat-toolbar>
+
+  <form (ngSubmit)="onSubmit()" [formGroup]="loginForm" class="login-form">
+    <mat-form-field appearance="outline" class="login-field">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" required type="email" />
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" class="login-field">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="password" required type="password" />
+    </mat-form-field>
+
+    <button mat-button color="primary" type="submit" class="login-btn" [disabled]="loginForm.invalid">Login</button>
+  </form>
+
+  <div class="extra-links">
+    <a routerLink="/auth/signup" class="link">Don't have an account? Sign up</a>
+    <a routerLink="/auth/forgot-password" class="link">Forgot your password?</a>
+  </div>
+</mat-card>
